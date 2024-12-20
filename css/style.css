@@ -1,0 +1,76 @@
+#video-background {
+  position: relative;
+  width: 100%; /* Ширина div */
+  height: 500px; /* Высота div может быть любой, заданной вами */
+  overflow: hidden;
+}
+
+#video-background video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Растягиваем видео по размерам div */
+  z-index: -1;
+}
+
+#video-background .content {
+  position: relative;
+  z-index: 1; /* Контент над видео */
+  color: white;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hover-image {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  display: block;
+}
+
+.hover-image:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+.hover-image-paper {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  display: block;
+}
+
+.hover-image-paper:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+#menu-text {
+  color: white;
+  text-decoration: none;
+}
+@font-face {
+  font-family: "MyCustomFont";
+  src: url("menu.ttf") format("truetype");
+}
+
+.custom-font {
+  font-family: "MyCustomFont", sans-serif;
+  font-size: 23px;
+}
+#tokenomiks {
+  width: 1200px; /* Ширина div */
+  height: 700px; /* Высота div */
+  border: 20px solid #222222; /* Рамка толщиной 2px, цвета #333 (темно-серый) */
+  border-radius: 35px; /* Закругление углов на 15px */
+  padding: 20px; /* Внутренний отступ */
+  background-color: #7f3300; /* Цвет фона div */
+}
+#social-block {
+  border-radius: 20px;
+  border: 1px solid #fff;
+}
+#peper-news {
+  width: 90%;
+  border-radius: 20px;
+}
+#hr {
+  border-color: #332a26;
+}

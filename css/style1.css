@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "MyCustom"; /* Название шрифта */
+  src: url("news.otf") format("truetype"); /* Путь к файлу шрифта */
+  font-weight: normal;
+  font-style: normal;
+}
+#text-news {
+  font-family: "MyCustom", sans-serif;
+  color: #332a26;
+}
